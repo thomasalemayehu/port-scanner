@@ -32,6 +32,11 @@ def main():
             if connection_status == 0:
                 print(f"Port {target_port} is open on ip {target_ip_address}")
 
+        print("-" * 50)
+        print(f"Scanning target {target_ip_address} complete")
+        print(f"Time ended: {str(dt.now())}")
+        print("-" * 50)
+
     except KeyboardInterrupt:
         print("\n Scan manually interrupted!")
         sys.exit()
